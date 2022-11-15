@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Aos from "aos";
 import { ToastContainer } from "react-toastify";
 import Modal from "./components/preBuild/Modal";
+import Home from "./components/home/Home";
 
 
 // for implementing aos animation
@@ -40,12 +41,11 @@ function App() {
   return (
     <div className="">
       
-      <h1 className="container text-center text-7xl min-h-screen flex justify-center items-center bg-zinc-900 text-white">
-        <span className="fadeIn">React is Working....</span></h1>
+      
 
       <section>
         <Routes>
-          <Route path="/" element={''} />
+          <Route path="/" element={<Home/>} />
 
 
 
